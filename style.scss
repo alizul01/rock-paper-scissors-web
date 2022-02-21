@@ -1,0 +1,106 @@
+// Font poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+// Global Styles
+$font-family: 'Poppins', sans-serif;
+$font-size: 14px;
+$primary-color: #141E27;
+$background-color: #EEEDDE;
+$third-color: #45606b;
+$secondary-color: #68879b;
+
+// Reset HTML 
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $primary-color;
+    background-color: $background-color;
+}
+
+// class name = header, align text to center
+.header {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: $secondary-color;
+    stroke: $third-color;
+    border-radius: 50px;
+}
+
+.container {
+    margin: 45px;
+    padding: 0 15px;
+}
+
+.img-komputer {
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+}
+
+.computer-box {
+    padding: 15px;
+    background-color: $secondary-color;
+    border-radius: 50px;
+    margin: 10px;
+    width: auto;
+}
+
+.area-komputer {
+    padding: 10px;
+    background-color: $third-color;
+    border-radius: 50px;
+    margin: 5px;
+    margin-bottom: 25px;
+    width: auto;
+}
+
+.img-player {
+    transition: all 0.5s ease;
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    background-color: aquamarine;
+    padding: 35px;
+    border-radius: 100px;
+
+    &:hover {
+        transition: all 0.5s ease-in-out;
+        background-color: #141E27;
+        color: #EEEDDE;
+        cursor: pointer;
+    }
+}
+
+.player-area {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    width: 300px;
+    height: 50px;
+    border: 5px solid $primary-color;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    color: $primary-color;
+    background-color: #FFF;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 5px solid $primary-color;
+    font-size: 2.5em;
+    font-weight: bold;
+}
